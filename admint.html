@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/noResponsive.js"></script>
+
+    <link rel="stylesheet" href="css/admint.css">
+</head>
+
+<body>
+    <nav>
+        <h1>SRI</h1>
+        <h1>Restaurante Ichiraku Ramen</h1>
+        <h2>Usuario: Jhojann Triana</h2>
+    </nav>
+    <div class="content">
+        <a href="#" onclick='req("multimedia/admint.png")'>RF</a>
+
+        <div>
+            <h1>Datos de usuario</h1>
+            <hr><br>
+            <p>Cargo del usuario: Administrador</p>
+            <p>Nombre: Jhojann Triana</p>
+            <p>ID de trabajador:1022</p><br><br>
+        </div>
+        <div>
+            <h1>Informe de ventas</h1>
+            <hr><br>
+            <h2>Ichiraku Ramen</h2>
+            <h4>Seleccione el tiempo en el que quiere que se base el informe</h4><br>
+            <form action="">
+                <label for="">Dias</label>
+                <input type="number" required>
+                <label for="">Meses</label>
+                <input type="number" required>
+                <input type="submit" value="Descargar informe" onclick="postImg('https://blog.hubspot.es/hubfs/media/05Comocrearunreportedeventaspaso41.png')">
+            </form><br><br><br>
+            <h2>Ichiland Maid Café</h2>
+            <h4>Seleccione el tiempo en el que quiere que se base el informe</h4><br>
+            <form action="">
+                <label for="">Dias</label>
+                <input type="number" required>
+                <label for="">Meses</label>
+                <input type="number" required>
+                <input type="submit" value="Descargar informe" onclick="postImg('https://blog.hubspot.es/hubfs/media/05Comocrearunreportedeventaspaso41.png')">
+            </form>
+        </div><br><br>
+        <button><a href="worker.html">Ver gestion de reservas</a></button>
+
+        <div>
+            <h1>Empleados registrados</h1>
+            <hr><br>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>Nombres y apellidos</th>
+                    <th>Cargo</th>
+                    <th>Correo electronico</th>
+                    <th>Telefono / celular</th>
+                    <th>Dirección</th>
+                    <th>Contraseña</th>
+                    <th>Config</th>
+                </tr>
+                <tr>
+                    <td>1022</td>
+                    <td>Jhojann Estiven Triana Quiroga</td>
+                    <td>Recepcion</td>
+                    <td>jhostriana11@misena.edu.co</td>
+                    <td>3227519202</td>
+                    <td>"direccion"</td>
+                    <td>234213</td>
+
+                    <td><a href="#" onclick="confirm('¿Esta seguro de que quiere eliminar la cuenta?')">Eliminar cuenta</a></td>
+                </tr>
+                <tr>
+                    <td>1022</td>
+                    <td>Andrés Felipe Ramos</td>
+                    <td>Recepcion</td>
+                    <td>jhostriana11@misena.edu.co</td>
+                    <td>3227519202</td>
+                    <td>"direccion"</td>
+                    <td>234213</td>
+
+                    <td><a href="#" onclick="confirm('¿Esta seguro de que quiere eliminar la cuenta?')">Eliminar cuenta</a></td>
+                </tr>
+                <tr>
+                    <td>1022</td>
+                    <td>Andrés Felipe Guerrero</td>
+                    <td>Recepcion</td>
+                    <td>jhostriana11@misena.edu.co</td>
+                    <td>3227519202</td>
+                    <td>"direccion"</td>
+                    <td>234213</td>
+
+                    <td><a href="#" onclick="confirm('¿Esta seguro de que quiere eliminar la cuenta?')">Eliminar cuenta</a></td>
+                </tr>
+                <tr>
+                    <td>1022</td>
+                    <td>Jhojann Estiven Triana Quiroga</td>
+                    <td>Recepcion</td>
+                    <td>jhostriana11@misena.edu.co</td>
+                    <td>3227519202</td>
+                    <td>"direccion"</td>
+                    <td>234213</td>
+
+                    <td><a href="#" onclick="confirm('¿Esta seguro de que quiere eliminar la cuenta?')">Eliminar cuenta</a></td>
+                </tr>
+                <tr>
+                    <td>1022</td>
+                    <td>Juliana Penagos</td>
+                    <td>Recepcion</td>
+                    <td>jhostriana11@misena.edu.co</td>
+                    <td>3227519202</td>
+                    <td>"direccion"</td>
+                    <td>234213</td>
+
+                    <td><a href="#" onclick="confirm('¿Esta seguro de que quiere eliminar la cuenta?')">Eliminar cuenta</a></td>
+                </tr>
+                <tr>
+                    <td>1022</td>
+                    <td>Jhojann Estiven Triana Quiroga</td>
+                    <td>Recepcion</td>
+                    <td>jhostriana11@misena.edu.co</td>
+                    <td>3227519202</td>
+                    <td>"direccion"</td>
+                    <td>234213</td>
+                    <td><a href="#" onclick="confirm('¿Esta seguro de que quiere eliminar la cuenta?')">Eliminar cuenta</a></td>
+                </tr>
+            </table>
+            <form action="">
+                <h1>Agregar usuario</h1>
+                <hr><br>
+                <label for="">Ingrese nombre y apellidos completos del usuario</label>
+                <input type="text">
+                <label for="">Ingrese el cargo del usuario</label>
+                <input type="text">
+                <label for="">Ingrese el correo del usuario</label>
+                <input type="email">
+                <label for="">Ingrese el numero telefonico o celular del usuario</label>
+                <input type="number">
+                <input type="submit" value="Registrar usuario" onclick="alert('El usuario se ha registrado \n La contraseña es: 1022322859')">
+            </form>
+        </div>
+    </div>
+    <script src="javascript/wroker.js"></script>
+    <script src="javascript/postImg.js"></script>
+</body>
+
+</html>

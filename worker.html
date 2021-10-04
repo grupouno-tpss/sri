@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/noResponsive.js"></script>
+    <link rel="stylesheet" href="css/worker.css">
+</head>
+
+<body>
+    <nav>
+        <h1>SRI</h1>
+        <h1>Restaurante Ichiraku Ramen</h1>
+        <h2>Usuario: Juliana Penagos</h2>
+    </nav>
+    <div class="content">
+        <a href="#" onclick='req("multimedia/req-recep.png")'>RF</a>
+        
+        <a href="admint.html">Vista de administrador</a>
+
+
+        <div>
+            <h1>Datos de usuario</h1>
+            <hr><br>
+            <p>Cargo del usuario: Recepción</p>
+            <p>Nombre: Juliana Penagos</p>
+            <p>ID de trabajador:1022</p><br><br>
+
+            <h1>Detalles de reservaciones</h1>
+            <hr><br>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombres y apellidos</th>
+                    <th>Correo electrónico</th>
+                    <th>Numero telefonico</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Estado</th>
+                    <th>Detalle</th>
+                </tr>
+                <tr>
+                    <td onclick="det()">001</td>
+                    <td onclick="det()">Jhojann Estiven Triana Quiroga</td>
+                    <td onclick="det()">jhostriana11@misena.edu.co</td>
+                    <td onclick="det()">3227519202</td>
+                    <td onclick="det()">14/12/2021</td>
+                    <td onclick="det()">13:00</td>
+                    <td onclick="det()">Pendiente</td>
+                    <th onclick="det()"><a href="#">Ver detalle</a></th>
+                </tr>
+                <tr>
+                    <td onclick="det()">002</td>
+                    <td onclick="det()">Andrés Felipe Ramos Ricaurte</td>
+                    <td onclick="det()">andresricaute98@gmail.com</td>
+                    <td onclick="det()">3214027931</td>
+                    <td onclick="det()">14/12/2021</td>
+                    <td onclick="det()">18:00</td>
+                    <td onclick="det()">Pendiente</td>
+                    <th onclick="det()"><a href="#">Ver detalle</a></th>
+                </tr>
+                <tr>
+                    <td onclick="det()">003</td>
+                    <td onclick="det()">Andres Felipe Guerrero</td>
+                    <td onclick="det()">andres@gmail.com</td>
+                    <td onclick="det()">3227519202</td>
+                    <td onclick="det()">14/12/2021</td>
+                    <td onclick="det()">10:00</td>
+                    <td onclick="det()">Pendiente</td>
+                    <th onclick="det()"><a href="#">Ver detalle</a></th>
+                </tr>
+                <tr>
+                    <td onclick="det()">004</td>
+                    <td onclick="det()">Jhojann Estiven Triana Quiroga</td>
+                    <td onclick="det()">jhostriana11@misena.edu.co</td>
+                    <td onclick="det()">3227519202</td>
+                    <td onclick="det()">14/12/2021</td>
+                    <td onclick="det()">13:00</td>
+                    <td onclick="det()">Pendiente</td>
+                    <th onclick="det()"><a href="#">Ver detalle</a></th>
+                </tr>
+                <tr>
+                    <td onclick="det()">005</td>
+                    <td onclick="det()">Andrés Felipe Ramos Ricaurte</td>
+                    <td onclick="det()">andresricaute98@gmail.com</td>
+                    <td onclick="det()">3214027931</td>
+                    <td onclick="det()">14/12/2021</td>
+                    <td onclick="det()">18:00</td>
+                    <td onclick="det()">Pendiente</td>
+                    <th onclick="det()"><a href="#">Ver detalle</a></th>
+                </tr>
+                <tr>
+                    <td onclick="det()">006</td>
+                    <td onclick="det()">Andres Felipe Guerrero</td>
+                    <td onclick="det()">andres@gmail.com</td>
+                    <td onclick="det()">3227519202</td>
+                    <td onclick="det()">14/12/2021</td>
+                    <td onclick="det()">10:00</td>
+                    <td onclick="det()">Pendiente</td>
+                    <th onclick="det()"><a href="#">Ver detalle</a></th>
+                </tr>
+            </table><br><br><br>
+        </div>
+        <div>
+            <h1>Reservaciones por semana - octubre 4- 9</h1>
+            <hr><br>
+            <table>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td onclick="det()"><a href="">001</a></td>
+                    <td onclick="det()"><a href="">002</a></td>
+                    <td onclick="det()">
+                        <a href="">006</a>
+                    </td>
+                    <td onclick="det()"><a href="">004</a></td>
+                </tr>
+                <tr>
+                    <td onclick="det()"><a href="">003</a></td>
+                    <td onclick="det()"><a href="">004</a></td>
+                    <td onclick="det()">
+                        <a href=""></a>
+                    </td>
+                    <td onclick="det()">
+                        <a href=""></a>
+                    </td>
+                    <td onclick="det()"><a href="">005</a></td>
+
+                </tr>
+                <tr>
+                    <td onclick="det()"><a href="">002</a></td>
+                    <td onclick="det()"><a href="">003</a></td>
+                    <td onclick="det()">
+                        <a href=""></a>
+                    </td>
+                    <td onclick="det()"><a href="">006</a></td>
+                </tr>
+                <tr>
+                    <td onclick="det()"><a href="">005</a></td>
+                    <td onclick="det()"><a href="">003</a></td>
+                    <td onclick="det()">
+                        <a href=""></a>
+                    </td>
+                    <td onclick="det()"><a href="">002</a></td>
+                </tr>
+                <tr>
+                    <td onclick="det()"><a href="">003</a></td>
+                    <td onclick="det()"><a href="">001</a></td>
+                    <td onclick="det()">
+                        <a href=""></a>
+                    </td>
+                    <td onclick="det()"><a href="">003</a></td>
+                </tr>
+            </table><br><br>
+        </div>
+        <div>
+            <h1>Tiempos disponibles - octubre 4- 9</h1>
+            <hr><br>
+            <table>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>10:00 - 12:00, 15:00 - 17:00</td>
+                    <td>12:00 - 13:50</td>
+                    <td>15:00 - 17:00</td>
+                    <td>7:00 - 11:00</td>
+                    <td>10:00 - 12:00</td>
+                </tr>
+            </table><br><br>
+        </div>
+        <div>
+            <form action="">
+                <h2>Comentario o novedad de la semana</h2>
+                <hr><br>
+                <input type="text">
+                <input type="submit" class="submit" value="Registrar comentario" onclick="alert('Se ha registrado el comentario')">
+            </form><br><br>
+        </div>
+    </div>
+    <script src="javascript/wroker.js"></script>
+    <script src="javascript/postImg.js"></script>
+
+</body>
+
+</html>

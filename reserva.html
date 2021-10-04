@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reserva.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Bievenido usuario</h1>
+        <h1>Sistema de reservaciones</h1>
+        <img src="https://ichirakuramenco.com/wp-content/uploads/2020/07/cropped-Logo1-1-1-300x287.png" width="90px">
+    </nav>
+
+    <div class="content">
+
+        <div class="divForm">
+            <a href="#" onclick='req("multimedia/reservas.png")'>RF</a>
+
+
+            <form action="" method="post" class="form">
+                <label for="nombre">Nombres y apellidos</label>
+                <input type="text" placeholder="Ingrese los nombres y apellidos" required>
+                <label for="correo">Correo eletrónico</label>
+                <input type="email" placeholder="@gmail.com">
+                <label for="">Numero telefonico</label>
+                <input type="number">
+                <label for="range">Cantidad de personas</label>
+                <input type="number" min="1">
+                <label for="date">Fecha</label>
+                <input type="date">
+                <label for="hora">Hora</label>
+                <input type="time" min="09:00" max="18:00" class="time">
+
+                <label for="cars">Tipo de servicio:</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Servicio normal</option>
+                    <option value="saab">Evento</option>
+                </select>
+                <label for="coment">Deje su comentario</label>
+                <input type="text">
+                <button onclick="alert('Se ha registrado su reservación. Por favor verifique el correo que le enviamos, en donde se especifican los detalles de la reservación que hizo \n ID de la reservacion: 1022')">Reservar</button>
+            </form>
+        </div>
+        <div class="img">
+            <img src="https://biencomun.com/wp-content/uploads/2017/11/comida-original-de-anime.jpg" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5xqzutFRw7-N7nyEiK0Srvn9vHAMhMDeiVPYAiKveAPmAnOUy8BywUob4EodvTe__PEw&usqp=CAU" alt="">
+            <img src="https://i.pinimg.com/originals/e5/97/ec/e597ecb5cefb9ca65cb3c5b834a4c090.gif" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIGGFMiSS0-7E8kBYaaIKymIaKwGk_XieQlxrT4YYBkWVvN9ypa8TmG0m7g5hJ9nLlJg&usqp=CAU" alt=""><br><br><br>
+            <img id="logo" src="https://ichirakuramenco.com/wp-content/uploads/2020/07/cropped-Logo1-1-1-300x287.png" alt=""><br>
+        </div>
+    </div>
+    <script>
+        document.getElementById("logo").setAttribute("style", "display:block; margin:auto; width: 300px;");
+    </script>
+    <script src="javascript/postImg.js"></script>
+</body>
+
+</html>
